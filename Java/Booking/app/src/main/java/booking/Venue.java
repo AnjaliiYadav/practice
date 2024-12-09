@@ -37,9 +37,6 @@ public class Venue {
         }
     }
 
-    public HashMap<Character, ArrayList<Seat>> getSeats(){
-        return seats;
-    }
 
 
     private char getRow(int i){
