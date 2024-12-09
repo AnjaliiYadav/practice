@@ -13,7 +13,7 @@ Language support for Java
 
 ### set up a new conda environment:
       
-conda create --name env_name python=3.12.4
+conda create --name env_name python=3.12.4 #you can change the version 
 conda activate env_name
 
 ---vs terminal--
