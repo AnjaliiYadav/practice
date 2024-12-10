@@ -62,10 +62,9 @@ public class Trade {
     }
 
 
-    public void execute(Trader trader, Citizen citizen) {
-        if (trader.trade.equals(this)){
-            throw new IllegalArgmentException("Trade is empty");
-        }
+    public void execute(Trader trader, Citizen citizen) throws IllegalArgumentException  {
+        if (!trader.trade.equals(this)) throw new IllegalArgumentException("Trade is empty");
+
         else{
            boolean response= citizen.executeTrade(trader.trade);
            if(response){
